@@ -1,6 +1,7 @@
 <?php 
 
     function validarId($id){
+        // Validar que el ID recibido sea numerico
         return is_numeric($id);
     }
 
@@ -18,10 +19,14 @@
 
     function validarTelefono($telefono){
         // Validar que el telefono recibido sea de 9 cifras
-       
+        if(strlen($telefono) == 9 && is_numeric($telefono)) return true;
+        return false;
+    }
 
     function validarDireccion($direccion){
         // Validar que la direccion recibida tenga menos de 50 caracteres
+        if(strlen($apellido) < 50) return true;
+        return false;
     }
 
     
