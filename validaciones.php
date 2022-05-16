@@ -1,32 +1,30 @@
 <?php 
 
     function validarId($id){
-        if (isset($id) && 
-            is_numeric($id)) 
+        if (is_numeric($id)) 
             return true;
     }
 
     function validarNombre($nombre){
-        if (isset($nombre) && 
+        if (strlen(trim($nombre))>0 && 
             strlen($nombre)<20) 
             return true;
     }
 
     function validarApellido($apellido){
-        if (isset($apellido) && 
+        if (strlen(trim($apellido))>0 && 
             strlen($apellido)<20) 
             return true;
     }
 
     function validarTelefono($telefono){
-        if (isset($telefono) && 
-            is_numeric($telefono) && 
-            strlen((string) $telefono)==9) 
+        if (is_numeric($telefono) && 
+            strlen((string)$telefono)==9) 
             return true;
     }
 
     function validarDireccion($direccion){
-        if (isset($direccion) &&
+        if (strlen(trim($direccion))>0 &&
             strlen($direccion)<50)
             return true;
     }
