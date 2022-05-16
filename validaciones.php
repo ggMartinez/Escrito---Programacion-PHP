@@ -1,19 +1,27 @@
 <?php 
 
     function validarId($id){
-        // Validar que el ID recibido sea numerico
+            return in_numeric($id);
     }
 
     function validarNombre($nombre){
-        // Validar que el nombre recibido tenga menos de 20 caracteres
+        if(isset($nombre) && strlen($nombre) < 20 ){
+        return true;
+   }
+
     }
 
     function validarApellido($apellido){
-        // Validar que el apellido recibido tenga menos de 20 caracteres
+        if(isset($apellido) && strlen($apellido) < 20 ){
+            return true;
+        }
     }
-
+    
+    
     function validarTelefono($telefono){
-        // Validar que el telefono recibido sea de 9 cifras
+        if(isset($telefono) && strlen($telefono) == 9 ){
+            return in_numeric($telefono);
+        }
     }
 
     function validarDireccion($direccion){
