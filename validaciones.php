@@ -33,7 +33,7 @@
         // Validar que la direccion recibida tenga menos de 50 caracteres
         if (strlen($direccion)>5 && strlen($direccion)<50) {
             return true;
-            # code...
+            # no se si borrar los comentarios
         }
     }
 
