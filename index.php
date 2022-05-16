@@ -13,7 +13,8 @@
         Apellido: <input type="text" name="apellido">
         Telefono: <input type="text" name="telefono">
         Direccion: <input type="text" name="direccion">
-        Enviar: <button type="sumbit">Enviar</button>
+        Enviar: <button type="submit">Enviar</button>
+
 
 
     </form>

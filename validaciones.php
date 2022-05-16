@@ -8,17 +8,17 @@
 
     function validarNombre($nombre){
         // Validar que el nombre recibido tenga menos de 20 caracteres
-        if (strlen($nombre)>3||strlen($nombre)<20) {
-            return true;
+        if (strlen($nombre)>3 && strlen($nombre)<20) {
+            return false;
             # code...
         }
     }
 
     function validarApellido($apellido){
         // Validar que el apellido recibido tenga menos de 20 caracteres
-        if (strlen($apellido)>3||strlen($apellido)<20) {
+        if (strlen($apellido)>3 && strlen($apellido)<20) {
             # code...
-            return true;
+            return false;
         }
     }
 
@@ -31,8 +31,8 @@
 
     function validarDireccion($direccion){
         // Validar que la direccion recibida tenga menos de 50 caracteres
-        if (strlen($direccion)>5||strlen($direccion)<50) {
-            return true;
+        if (strlen($direccion)>5 && strlen($direccion)<50) {
+            return false;
             # code...
         }
     }
