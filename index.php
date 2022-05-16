@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="informacion.php" method="post">
+    <form 
+        action="informacion.php" method="post">
         ID: <input type="text" name="id">
         Nombre: <input type="text" name="nombre">
         Apellido: <input type="text" name="apellido">
         Telefono: <input type="text" name="telefono">
         Direccion: <input type="text" name="direccion">
+    <input type="submit" name="submit" class="submit action-button" value="ENVIAR" />
 
 
     </form>
