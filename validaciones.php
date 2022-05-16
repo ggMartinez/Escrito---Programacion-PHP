@@ -23,7 +23,13 @@ function validarApellido($apellido)
 function validarTelefono($telefono)
 {
     // Validar que el telefono recibido sea de 9 cifras
-    if ((strlen($telefono) < 9) && (is_numeric($telefono))) return true;
+    $encontrar = ".";
+    $busqueda = strpos($telefono, "$encontrar");
+    if (
+        (strlen($telefono) == 9) &&
+        (is_numeric($telefono)) &&
+        ($busqueda === false)
+    ) return true;
     return false;
 }
 
