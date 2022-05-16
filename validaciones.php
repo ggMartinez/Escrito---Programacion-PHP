@@ -2,6 +2,9 @@
 
     function validarId($id){
         // Validar que el ID recibido sea numerico
+        if (isset($id) && 
+            is_numeric($id)) 
+            return true;
     }
 
     function validarNombre($nombre){
