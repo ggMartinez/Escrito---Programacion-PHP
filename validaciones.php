@@ -23,7 +23,7 @@
     }
 
     function validarTelefono($telefono){
-        if (strlen($telefono)<9){
+        if (strlen($telefono) == 9){
             return is_numeric($telefono);
         }
         // Validar que el telefono recibido sea de 9 cifras
