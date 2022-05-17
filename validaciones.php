@@ -30,13 +30,19 @@
     }
 
     function validarTelefono($telefono){
-                 
-              // Validar que el telefono recibido sea de 9 cifras
+        if (is_numeric($telefono)){
+            return true;
+        } 
+             
     }
 
     function validarDireccion($direccion){
-                 
-        // Validar que la direccion recibida tenga menos de 50 caracteres
+        if (isset($direccion) &&
+        strlen($direccion) < 50
+       
+    )
+            return true;
+       
     }
 
     
