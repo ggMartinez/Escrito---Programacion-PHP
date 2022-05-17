@@ -6,10 +6,12 @@
     }
 
     function validarNombre($nombre){
+        return strlen($nombre)<20;
         // Validar que el nombre recibido tenga menos de 20 caracteres
     }
 
     function validarApellido($apellido){
+        return strlen($apellido)<20;
         // Validar que el apellido recibido tenga menos de 20 caracteres
     }
 
