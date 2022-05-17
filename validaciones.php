@@ -6,6 +6,7 @@
 
     function validarNombre($nombre){
         // Validar que el nombre recibido tenga menos de 20 caracteres
+        
     }
 
     function validarApellido($apellido){
