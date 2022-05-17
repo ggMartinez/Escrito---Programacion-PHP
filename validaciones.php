@@ -1,7 +1,7 @@
 <?php 
 
     function validarId($id){
-        // Validar que el ID recibido sea numerico
+       is_numeric($id)
     }
 
     function validarNombre($nombre){
