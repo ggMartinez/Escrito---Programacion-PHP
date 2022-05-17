@@ -25,7 +25,10 @@
     }
 
     function validarDireccion($direccion){
-        // Validar que la direccion recibida tenga menos de 50 caracteres
+        if(isset($direccion) && strlen($direccion) < 50 ){
+            return true;
+        }
+       
     }
 
     
