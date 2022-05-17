@@ -1,7 +1,7 @@
 <?php 
 
     function validarId($id){
-            return in_numeric($id);
+            return is_numeric($id);
     }
 
     function validarNombre($nombre){
@@ -20,7 +20,7 @@
     
     function validarTelefono($telefono){
         if(isset($telefono) && strlen($telefono) == 9 ){
-            return in_numeric($telefono);
+            return is_numeric($telefono);
         }
     }
 
