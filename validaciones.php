@@ -22,7 +22,7 @@
 
     function validarDireccion($direccion){
         // Validar que la direccion recibida tenga menos de 50 caracteres
-        
+        return strlen($direccion) < 50;
     }
 
     
