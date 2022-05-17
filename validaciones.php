@@ -8,7 +8,7 @@
     }
 
     function validarNombre($nombre){
-        
+
         if (strlen($nombre)<20) {
             return true;
         }
@@ -21,11 +21,16 @@
     }
 
     function validarTelefono($telefono){
-        // Validar que el telefono recibido sea de 9 cifras
+        
+        if (is_numeric($telefono) && strlen($telefono) <= 9) {
+            return true;
+        }    
     }
 
     function validarDireccion($direccion){
-        // Validar que la direccion recibida tenga menos de 50 caracteres
-    }
 
+        if (strlen($apellido)<50) {
+            return true;
+        }
+    }
     
