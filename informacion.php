@@ -1,6 +1,6 @@
 <?php 
 
-    require "informacion.php";
+    require "validaciones.php";
 
     // Campos del formulario que se asignan a variables
     $id = $_POST['id'];
@@ -9,7 +9,7 @@
     $telefono = $_POST['telefono'];
     $direccion = $_POST['direccion'];
 
-
+    
     // Verificar si todas las validaciones pasan
     if (
         validarId($id) == true &&
@@ -25,9 +25,7 @@
         echo "Apellido: $apellido  <br />";
         echo "Telefono: $telefono  <br />";
         echo "Direccion: $direccion  <br />";
-
     }
     else 
         echo "Fallo la validacion de los campos";
     
-

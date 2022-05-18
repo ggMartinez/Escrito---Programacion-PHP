@@ -14,7 +14,7 @@
         Telefono: <input type="text" name="telefono">
         Direccion: <input type="text" name="direccion">
 
-
+        <input type="submit">
     </form>
 </body>
 </html>
