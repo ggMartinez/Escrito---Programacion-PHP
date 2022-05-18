@@ -1,6 +1,6 @@
 <?php 
 
-    require "informacion.php";
+require "validaciones.php";
 
     // Campos del formulario que se asignan a variables
     $id = $_POST['id'];
